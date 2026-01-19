@@ -1,0 +1,414 @@
+/* LandingPage.css */
+
+/* ---- Background ---- */
+.tc-bg {
+  background: radial-gradient(
+    1200px 800px at 20% 10%,
+    #1b2a3a 0%,
+    #070b12 55%,
+    #020409 100%
+  );
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+/* ---- Container ---- */
+.tc-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---- Header ---- */
+.tc-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+}
+
+.tc-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tc-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tc-logo-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #4f5bd5, #1fc8db);
+  border-radius: 12px;
+}
+
+.tc-logo-text {
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+}
+
+/* ---- Nav ---- */
+.tc-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.tc-nav-item {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.tc-nav-item:hover {
+  color: #fff;
+}
+
+/* ---- Actions ---- */
+.tc-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.tc-btn {
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tc-btn-primary {
+  background: linear-gradient(135deg, #4f5bd5, #1fc8db);
+  border: none;
+  color: #fff;
+}
+
+.tc-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 20px rgba(31, 200, 219, 0.35);
+}
+
+.tc-btn-outline {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.tc-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* ---- Mobile Menu Button ---- */
+.tc-menu-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.tc-menu-icon {
+  width: 28px;
+  height: 28px;
+  color: #fff;
+}
+
+/* ---- Hero ---- */
+.tc-hero {
+  display: flex;
+  gap: 40px;
+  padding: 70px 0 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tc-hero-left {
+  flex: 1;
+}
+
+.tc-title {
+  font-size: 56px;
+  line-height: 1.1;
+  font-weight: 900;
+  margin: 0;
+  color: #fff;
+}
+
+.tc-subtitle {
+  font-size: 18px;
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 600px;
+}
+
+.tc-hero-cta {
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+}
+
+.tc-hero-metrics {
+  display: flex;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.tc-metric {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  padding: 14px 16px;
+  min-width: 140px;
+}
+
+.tc-metric-value {
+  font-size: 20px;
+  font-weight: 900;
+  display: block;
+}
+
+.tc-metric-label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ---- Right Card ---- */
+.tc-hero-right {
+  width: 420px;
+}
+
+.tc-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.tc-card-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.tc-card-title {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.tc-card-score {
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tc-card-body {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 10px;
+}
+
+.tc-card-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.tc-good {
+  color: #20c997;
+  font-weight: 700;
+}
+.tc-warning {
+  color: #ffcc00;
+  font-weight: 700;
+}
+.tc-bad {
+  color: #ff4d4d;
+  font-weight: 700;
+}
+
+.tc-card-footer {
+  padding-top: 10px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+}
+
+/* ---- Sections ---- */
+.tc-section-title {
+  font-size: 26px;
+  font-weight: 900;
+  margin: 30px 0 18px;
+}
+
+.tc-features {
+  padding: 40px 0;
+}
+
+.tc-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.tc-feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.tc-feature-title {
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.tc-feature-desc {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+}
+
+/* ---- Footer ---- */
+.tc-footer {
+  padding: 30px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 40px;
+}
+
+.tc-footer-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+}
+
+/* ---- Mobile Responsiveness ---- */
+@media (max-width: 900px) {
+  .tc-hero {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .tc-hero-right {
+    width: 100%;
+  }
+
+  .tc-nav {
+    display: none;
+  }
+
+  .tc-actions {
+    display: none;
+  }
+
+  .tc-menu-btn {
+    display: block;
+  }
+
+  .tc-feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- Mobile Menu ---- */
+.tc-mobile-menu {
+  background: rgba(0, 0, 0, 0.55);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 18px 20px;
+}
+
+.tc-mobile-nav-item {
+  display: block;
+  padding: 10px 0;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+}
+
+.tc-mobile-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.tc-icon-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.tc-icon {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+/* Hover Effects for Nav */
+.tc-nav-item:hover {
+  color: #fff;
+  position: relative;
+}
+.tc-nav-item:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(135deg, #4f5bd5, #1fc8db);
+  border-radius: 999px;
+}
+
+/* Scroll Top Button */
+.tc-scroll-top {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  background: linear-gradient(135deg, #4f5bd5, #1fc8db);
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 18px 35px rgba(31, 200, 219, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tc-scroll-icon {
+  width: 22px;
+  height: 22px;
+  color: #fff;
+}
+
+/* Premium Card */
+.tc-premium-card {
+  position: relative;
+  overflow: hidden;
+}
+.tc-premium-card::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(
+    circle at top left,
+    rgba(79, 91, 213, 0.35),
+    transparent 60%
+  );
+  top: -20%;
+  left: -20%;
+  pointer-events: none;
+}
+.tc-scan-btn {
+  width: 100%;
+  margin-top: 14px;
+}

@@ -1,7 +1,14 @@
-export default function App() {
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/landingpage/landingpage";
+const App = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-3xl font-bold text-blue-600">Talent Connects</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/*" element={<LandingPage />} />
+      </Routes>
+    </Router>
   );
-}
+};
+
+export default App;
